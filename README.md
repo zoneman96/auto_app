@@ -24,10 +24,5 @@ Once logging in as the admin you can:
 1. Add new vehicles
 2. Edit existing vehicles
 
-### Desktop Screenshots
+### Screenshots
 
-
-### Mobile Screenshots
-
-
-### Admin Screenshots
