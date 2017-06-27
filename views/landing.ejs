@@ -1,0 +1,45 @@
+<% include ./partials/header %>
+
+<script src="/javascript/jquery.slides.min.js"></script>
+<script src="/javascript/landing.js"></script>
+<link rel="stylesheet" type="text/css" href="/stylesheets/slides.css">
+
+<div class="ui center aligned main huge text container">
+    <h1>Welcome to Teddys Auto!</h1>
+</div>
+<div class="ui center aligned two column doubling stackable grid container">
+    <div class="column">
+        <p>
+            Welcome to the official site of Teddy's Auto 
+            Sales! <strong>We are a family owned 
+            and operated business!</strong> We have 
+            been selling "Bearly" used vehicles for over 
+            <span id="big">thirty years!</span>
+        </p>
+        <p>
+            We want to invite you to checkout what Teddy's 
+            Auto Sales is all about, every time a customer 
+            purchases a pre-owned automobile from us, he 
+            or she becomes part of our family. There is a 
+            very special bond formed between Teddy's and 
+            our customers as it is not unusual to have a 
+            previous customer just come in and check out 
+            our newest antiques and classics in our 
+            showroom or just say hello and have a cup of 
+            coffee.
+
+            We look forward to helping you find your perfect 
+            " Bearly" used car or truck! 
+        </p>
+    </div>
+    <div class="column">
+        <div id="slides">
+            <% cars.forEach(function(car){ %>
+            <img src="<%= car.image[0] %>">
+            <% }) %>
+        </div>
+    </div>
+</div>
+
+
+<% include ./partials/footer %>

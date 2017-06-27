@@ -1,0 +1,73 @@
+<% include ./partials/header %>
+
+<link rel="stylesheet" type="text/css" href="/stylesheets/new.css">
+
+<div class="ui main text container segment">
+    <div class="ui huge header">Edit <%= car.make + " " + car.model %></div>
+    <form class="ui form" action="/cars/<%= car._id %>?_method=put" method="POST">
+    <form class="ui form" action="/cars" method="post">
+        <% car.image.forEach(function(url){ %>
+            <div class="field photo-input" id="photo-input"> 
+                <label>Image</label>
+                <input type="text" name="car[image]" value="<%= url %>">
+            </div>
+        <% }) %>
+        <span id="add-photo"><i class="fa fa-plus" aria-hidden="true"></i> Add Another Photo</span>
+        <span id="remove-photo"><i class="fa fa-minus" aria-hidden="true"></i> Remove Photo</span>
+        <div class="two fields">
+            <div class="field"> 
+                <label>Year</label>
+                <input type="text" name="car[year]" value="<%= car.year %>">
+            </div>
+            <div class="field"> 
+                <label>Make</label>
+                <input type="text" name="car[make]" value="<%= car.make %>">
+            </div>
+        </div>
+        <div class="two fields">
+            <div class="field"> 
+                <label>Model</label>
+                <input type="text" name="car[model]" value="<%= car.model %>">
+            </div>
+            <div class="field"> 
+                <label>Trim</label>
+                <input type="text" name="car[trim]" value="<%= car.trim %>">
+            </div>
+        </div>
+        <div class="two fields">
+            <div class="field"> 
+                <label>Miles</label>
+                <input type="text" name="car[miles]"  value="<%= car.miles %>">
+            </div>
+            <div class="field"> 
+                <label>Price</label>
+                <input type="text" name="car[price]"  value="<%= car.price %>">
+            </div>
+        </div>
+        <div class="inline fields">
+            <label for="fruit">Would you like this car featured on the home page?</label>
+            <div class="field">
+            <div class="ui radio checkbox">
+                <input type="radio" name="car[featured]" value="false" checked="" tabindex="0" class="hidden">
+                <label>No</label>
+            </div>
+            </div>
+            <div class="field">
+            <div class="ui radio checkbox">
+                <input type="radio" name="car[featured]" value="true" tabindex="0" class="hidden">
+                <label>Yes</label>
+            </div>
+            </div>
+        </div>
+        <div class="field"> 
+            <label>Description</label>
+            <textarea name="car[body]"><%= car.body %></textarea>
+        </div>
+        <input class="ui violet big basic button" type="submit">
+    </form>
+    </form>
+</div>
+
+<script src="/javascript/new.js"></script>
+
+<% include ./partials/footer %>

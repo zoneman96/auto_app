@@ -1,0 +1,51 @@
+<% include ./partials/header %>
+
+<div class="ui container">
+    <div class="ui center aligned huge header"><h2>Car Inventory</h2></div>
+    <form class="ui form" action="/cars/sort" id="sort-form" method="POST">
+        <div class="ui selection dropdown">
+            <input type="hidden" name="sort" id="sort">
+            <i class="dropdown icon"></i>
+            <div class="default text">Sort By</div>
+            <div class="menu">
+                <div class="item" value="price" data-value="0">Price</div>
+                <div class="item" value="miles" data-value="1">Miles</div>
+                <div class="item" value="make" data-value="2">Make</div>
+                <div class="item" value="year" data-value="3">Year</div>
+            </div>
+        </div>
+    </form>
+    <div class="ui top attached segment">
+        <div class="ui divided items">
+            <% cars.forEach(function(car){ %>
+                <div class="item">
+                    <div class="image">
+                        <img src="<%= car.image[0] %>" alt="">
+                    </div>
+                    <div class="content">
+                            <a class="header" href="/cars/<%= car._id %>"><%= car.make + " " + car.model %></a>
+                        <div class="meta">
+                            <span>Year: <%= car.year %></span>
+                            <span>Miles: <%= car.miles %></span>
+                            <span>Trim: <%= car.trim %></span>
+                        </div>
+                        <div class="description">
+                            <p><%- car.body.substring(0, 100) %>...</p>
+                        </div>
+                        <div class="extra">
+                            <span>Price: $<%= car.format.price %></span>
+                            <a class="ui right floated tiny basic blue button" href="/cars/<%= car._id %>">
+                                Read More
+                                <i class="right chevron icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            <% }) %>
+        </div>
+    </div>
+</div>
+
+<script src="/javascript/cars.js"></script>
+
+<% include ./partials/footer %>

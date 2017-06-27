@@ -1,0 +1,47 @@
+body {
+/*	background: url(https://visitwinona.com/wp-content/gallery/reasons-to-love-winona/IMG_2880.jpg);
+	background-size: cover;
+	background-position: center;*/
+	font-family: Lato;
+	color: black;
+}
+#content {
+	background-color: rgba(255,255,255,0.9);
+	background-size: auto;
+	border-radius: 25px;
+	text-align: left;
+	margin-top: 5%;
+	padding: 1%;
+/*	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+				 0px 8px 13px rgba(0,0,0,0.1),
+				 0px 18px 23px rgba(0,0,0,0.1);*/
+}
+h1 {
+	font-weight: 700;
+	font-size: 4.0em;
+}
+html {
+	height: 100%;
+}
+hr {
+	width: 400px;
+	border-top: 1px solid #f26d6d;
+	border-bottom: 1px solid rgba(0,0,0,0.2)
+}
+p {
+	font-size: 1.5em;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+	color: #f26d6d;
+}
+.navbar-default {
+	background-color: rgba(255,255,255,0);
+	border: #f26d6d;
+}
+h3	{
+	word-spacing: 2px;
+	font-size: 1.5em;
+}
+/*#spacing{
+	padding-top: 15px;
+}*/

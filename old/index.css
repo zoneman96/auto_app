@@ -1,0 +1,70 @@
+body {
+/*	background: url(IMG_2880.jpg);
+	background-size: cover;
+	background-position: center;*/
+	font-family: Lato;
+	color: white;
+	/*max-width: 800px;*/
+/*	margin: auto;*/
+}
+/*#background {
+	max-width: 800px;
+	margin: auto;
+}*/
+#content {
+	background-color: rgba(0,0,0,0);
+	border-radius: 25px;
+	text-align: center;
+	margin-top: 4%;
+	padding: 1% 1%;
+/*	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+				 0px 8px 13px rgba(0,0,0,0.1),
+				 0px 18px 23px rgba(0,0,0,0.1);*/
+}
+#est {
+	text-align: center;
+	margin-top: 2%;
+	font-family: Yellowtail;
+	font-size: 5.0rem;
+/*	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+				 0px 8px 13px rgba(0,0,0,0.1),
+				 0px 18px 23px rgba(0,0,0,0.1);*/
+}
+h1 {
+	font-weight: 700;
+	font-size: 5.0em;
+}
+html {
+	height: 100%;
+	margin: auto;
+}
+hr {
+	width: 500px;
+	border-top: 3px solid #f8f8f8;
+	border-bottom: 1px solid rgba(0,0,0,0.2)
+}
+.navbar-default {
+	background-color: rgba(255,255,255,0);
+	border: #f26d6d;
+}
+.navbar-default .navbar-nav > li > a {
+    color: white;
+}
+.navbar-default .navbar-brand {
+	color: white;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+	color: #f26d6d;
+}
+p {
+	font-size: 1.1em;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+	color: #f26d6d;
+}
+/*#welcomeText {
+	text-align: left;
+
+}*/
+
+

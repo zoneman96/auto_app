@@ -1,0 +1,18 @@
+div [class*="left floated"] {
+  float: left;
+  margin-left: 0.25em;
+}
+
+div [class*="right floated"] {
+  float: right;
+   margin-right: 0.25em;
+} 
+
+i {
+    margin-bottom: 1em;
+    margin-left: 0.5em;
+}
+
+.hidden {
+    display: none;
+}
