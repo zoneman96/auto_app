@@ -16,7 +16,7 @@ A simple, mobile ready, auto dealership website, with inventory manegement built
 -  The database is deployed on **mlab.com** cloud. 
 
 ### Administrator login:
- To login, you must go direct your browser to /admin (https://warm-anchorage-45940.herokuapp.com/admin)
+ To login, direct your browser to /admin (https://warm-anchorage-45940.herokuapp.com/admin)
 -  Email: admin@admin.com
 -  Password: password
 
