@@ -47,7 +47,7 @@ app.use(function(req, res, next){
 })
 
 // SeedDb
-seedCarDB();
+// seedCarDB();
 
 //Root Route
 app.get("/", function(req, res){
