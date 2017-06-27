@@ -26,3 +26,10 @@ Once logging in as the admin you can:
 
 ### Screenshots
 
+<img src="https://raw.githubusercontent.com/zoneman96/auto_app/master/screenshots/Teddys%20Auto%20(1).png" width="600">
+
+<img src="https://raw.githubusercontent.com/zoneman96/auto_app/master/screenshots/Teddys%20Auto%20(4).png" width="600">
+
+<img src="https://raw.githubusercontent.com/zoneman96/auto_app/master/screenshots/Teddys%20Auto%20(3).png" width="600">
+
+<img src="https://raw.githubusercontent.com/zoneman96/auto_app/master/screenshots/Teddys%20Auto%20(2).png" width="600">
