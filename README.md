@@ -13,7 +13,7 @@ A simple, mobile ready, auto dealership website, with inventory manegement built
 ## Deployment
 -  The application is live at: https://warm-anchorage-45940.herokuapp.com/
 -  The application is deployed on **Heroku** using source code pulled directly from GitHub.
--  The database is deployed on **mlab.com** cloud. 
+-  The database is deployed on **mlab.com**. 
 
 ### Administrator login:
  To login, direct your browser to /admin (https://warm-anchorage-45940.herokuapp.com/admin)
